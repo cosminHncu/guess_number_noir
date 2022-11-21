@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess Number | Gradient Edition</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- 1.Header Section: Welcome Text / Color Pallet / GUIDE -->
+    <!-- Welcome Text -->
+    <header class="welcome">
+      <div class="welcome-text">
+        <h1 class="welcome-h1">Guess The Correct Number</h1>
+        <p class="welcome-p">The Colors Will Show You</p>
+      </div>
+      <!-- GUIDE -->
+      <button class="btn guide" type="button">GUIDE</button>
+    </header>
+    <!-- 2.Input / Number / Message -->
+    <main class="game">
+      <!-- LEFT -->
+      <game class="game-left">
+        <!-- top -->
+        <div class="gl-top">
+          <div class="namePlayer">Player: <span class="player"></span></div>
+          <input type="number" class="guess" placeholder="HERE" />
+        </div>
+        <div class="gl-bottom">
+          <button class="btn check">CHECK</button>
+          <button class="btn reset">RESET</button>
+        </div>
+      </game>
+      <!-- RIGHT -->
+      <div class="game-right">
+        <p class="score-lab">Score: <span class="score"> 15</span></p>
+        <div class="number">?</div>
+        <div class="message">START GAME</div>
+        <div class="hidden message-name"></div>
+      </div>
+    </main>
+    <div class="guide-text hidden">
+      <h1>How To Play</h1>
+      <p>1. You have to guess a number between 1 and 15</p>
+      <p>2. Your score is decreasing with every wrong answer inserted</p>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
