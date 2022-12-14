@@ -156,6 +156,7 @@ body {
   padding: 0;
   font-size: 20rem;
 }
+
 .message {
   font-size: 3rem;
   position: relative;
@@ -189,3 +190,75 @@ body {
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+ @media (max-width: 480px) {
+  .welcome-h1{
+    font-size: 1.8rem;
+  }
+  .quide{
+    font-size: 1rem;
+  }
+  .game{
+    flex-direction: column-reverse;
+  }
+  .check{
+    font-size: 1.5rem;
+    width: 140px;
+  }
+  .reset{
+    font-size: 1.5rem;
+    width: 140px;
+  }
+  .score{
+    font-size: 2.5rem;
+  }
+  .score-lab{
+    font-size: 2.5rem;
+  }
+  .game{
+    height: 100vh;
+  }
+  .game-left{
+    gap: 1rem;
+    /*height: 50%;*/
+
+  }
+  .guide-text{
+    font-size: 2rem;
+    margin: 0;
+    padding: 1.6rem;
+    width: 80%;
+
+  }
+  .game-right{
+    height: 50%;
+  }
+  .number{
+    font-size: 6rem;
+  }
+  .message{
+    font-size: 2rem;
+    position: relative;
+    bottom: 0;
+  }
+  .gl-top{
+    height: auto;
+  }
+  .gl-bottom{
+    height: 50%;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    
+  }
+ }

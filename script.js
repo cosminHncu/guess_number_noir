@@ -11,23 +11,7 @@ const gameRight = document.querySelector(`.game-right`);
 const displayScore = function () {
   return (document.querySelector(`.score`).textContent = `${score}`);
 };
-//display name
-const player = prompt(`Enter Your Name: `);
-if (player) {
-  document.querySelector(`.player`).textContent = `${player}`;
-}
-let numberOfAttempts = 0;
-//creating a random number
-const generatRandomNumber = function () {
-  return Math.floor(Math.random() * 15) + 1;
-};
-//adding "life" to check button
-
-let correctNumber = generatRandomNumber();
-let score = 15;
-let highScore = 0;
-console.log(correctNumber);
-check.addEventListener(`click`, function () {
+const checkInput = (event) => {
   const guess = Number(document.querySelector(`.guess`).value);
   gameRight.style.backgroundColor = "#fff";
   if (!guess) {
@@ -69,7 +53,26 @@ check.addEventListener(`click`, function () {
       displayScore();
     }
   }
-});
+};
+
+//display name
+const player = prompt(`Enter Your Name: `);
+if (player) {
+  document.querySelector(`.player`).textContent = `${player}`;
+}
+let numberOfAttempts = 0;
+//creating a random number
+const generatRandomNumber = function () {
+  return Math.floor(Math.random() * 15) + 1;
+};
+//adding "life" to check button
+
+let correctNumber = generatRandomNumber();
+let score = 15;
+let highScore = 0;
+//console.log(correctNumber);
+check.addEventListener(`click`, checkInput);
+//check.addEventListener(`keypress`, checkInput);
 //reset button
 reset.addEventListener(`click`, function () {
   document.querySelector(`.score`).style.color = `black`;
