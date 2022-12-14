@@ -4,6 +4,8 @@ The guess my number game is a simple and fun way to test your guessing skills. T
 
 Link: https://cosminhncu.github.io/guess_number_noir/
 
+The UI is designed by me.
+
 Sttack:
 - HTML;
 - CSS;
