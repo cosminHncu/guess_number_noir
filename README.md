@@ -6,7 +6,7 @@ Link: https://cosminhncu.github.io/guess_number_noir/
 
 The UI is designed by me.
 
-Sttack:
+Stack:
 - HTML;
 - CSS;
 - Javascript;
